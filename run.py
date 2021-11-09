@@ -45,6 +45,31 @@ def random_point(size):
     """random point"""
     return randint(0, size-1)
 
+
+def populate_board(board):
+    """populating the board"""
+    if board.player_name != "computer":
+        print(f"{board.player_name}'s board:")
+        while True:
+            # player_board = [["." for x in range(size)] for y in range(size)]
+            _x = random_point(board.size)
+            _y = random_point(board.size)
+            if(_x, _y) in board.ships:
+                print("")
+            else:
+                board.add_ship(_x, _y)
+                if len(board.ships) == 4:
+                    break
+        print("\n")
+        board.battle_board()
+    else:
+        print(f"\n{board.player_name}'s board")
+        for _ in range(board.num_ships):
+            _x = random_point(board.size)
+            _y = random_point(board.size)
+            board.add_ship(_x, _y)
+        board.battle_board()
+
 def new_game():
     """
     Initilising battleship game
