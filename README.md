@@ -1,7 +1,7 @@
 # ULTIMATE BATTLESHIP GAME
 ## Introduction
 
-The live link can be found here - (https://battleshipp.herokuapp.com/)
+The live link can be found here - (https://battleshippp.herokuapp.com/)
 
 Ultimate Battleship game is a two player game, which runs in python terminal and is deployed on heroku. 
 
