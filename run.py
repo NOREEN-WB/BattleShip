@@ -2,6 +2,7 @@
 from random import randint
 scores = {"computer": 0, "player": 0}
 
+
 class Board:
     """Board Class"""
     def __init__(self, size, player_name, typee, num_ships):
@@ -13,32 +14,32 @@ class Board:
         self.ships = []
         self.guesses = []
 
-        def battle_board(self):
-            """spacing between dot's"""
-            for row in self.board:
-                print(" ".join(row))
+    def battle_board(self):
+        """spacing between dot's"""
+        for row in self.board:
+            print(" ".join(row))
 
-        def add_ship(self, _x, _y):
-            """
-            Adding Ship
-            """
-            if len(self.ships) >= self.num_ships:
-                print("Error: you cannot add any more ships!")
-            else:
-                self.ships.append((_x, _y))
-                if self.typee == "player":
-                    self.board[_x][_y] = "@"
+    def add_ship(self, _x, _y):
+        """
+        Adding Ship
+        """
+        if len(self.ships) >= self.num_ships:
+            print("Error: you cannot add any more ships!")
+        else:
+            self.ships.append((_x, _y))
+            if self.typee == "player":
+                self.board[_x][_y] = "@"
 
-        def guess(self, _x, _y):
-            """guessing th number"""
-            self.guesses.append((_x, _y))
-            self.board[_x][_y] = "X"
+    def guess(self, _x, _y):
+        """guessing th number"""
+        self.guesses.append((_x, _y))
+        self.board[_x][_y] = "X"
 
-            if(_x, _y) in self.ships:
-                self.board[_x][_y] = "*"
-                return "Hit"
-            else:
-                return "Miss"
+        if(_x, _y) in self.ships:
+            self.board[_x][_y] = "*"
+            return "Hit"
+        else:
+            return "Miss"
 
 
 def random_point(size):
@@ -142,6 +143,8 @@ def play_game(player_board, computer_board):
                         print("computer's board: ")
                         computer_board.battle_board()
                         print("\n")
+
+
 
 def new_game():
     """
