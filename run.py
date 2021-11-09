@@ -13,6 +13,11 @@ class Board:
         self.ships = []
         self.guesses = []
 
+        def battle_board(self):
+            """spacing between dot's"""
+            for row in self.board:
+                print(" ".join(row))
+
 
 def new_game():
     """
