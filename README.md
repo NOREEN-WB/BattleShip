@@ -72,3 +72,7 @@ In battleship game user play against computer and try to beat him by destroying 
    All the method to checks input validation are there and tested.
    
    ![pep8 online](images/pep8.PNG)
+
+  <a name="bugs"></a>
+# 5. Bugs
+    There is no bug in the game.
