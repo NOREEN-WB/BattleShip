@@ -29,6 +29,21 @@ class Board:
                 if self.typee == "player":
                     self.board[_x][_y] = "@"
 
+        def guess(self, _x, _y):
+            """guessing th number"""
+            self.guesses.append((_x, _y))
+            self.board[_x][_y] = "X"
+
+            if(_x, _y) in self.ships:
+                self.board[_x][_y] = "*"
+                return "Hit"
+            else:
+                return "Miss"
+
+
+def random_point(size):
+    """random point"""
+    return randint(0, size-1)
 
 def new_game():
     """
