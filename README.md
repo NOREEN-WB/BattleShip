@@ -57,6 +57,8 @@ In battleship game user play against computer and try to beat him by destroying 
   ## Lucid Chart
    - Lucid Chart was used to show the workflow of the game.
 
+   ![website preview](images/battleShip-Chart.PNG)
+
   ## Github
    - Github is used to store the project.
 
