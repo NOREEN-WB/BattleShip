@@ -14,9 +14,15 @@ In battleship game user play against computer and try to beat him by destroying 
 # Table of Contents
 
  [1. How to Play](#how-to-play)
+
  [2. Features](#features)
+
  [3. Technologies Used](#technologies-used)
+
  [4. Testing](#testing)
+
  [5. Bugs](#bugs)
+
  [6. Deployment](#deployment)
+ 
  [7. Credits](#credits)
