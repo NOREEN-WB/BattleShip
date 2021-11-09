@@ -90,8 +90,8 @@ def play_game(player_board, computer_board):
     """playing game"""
     while True:
         try:
-            _x = int(input('Enter X Coordinate: '))
-            _y = int(input('Enter Y Coordinate: '))
+            _x = int(input('Enter X Coordinate:\n '))
+            _y = int(input('Enter Y Coordinate:\n '))
         except ValueError:
             print('Not a number')
         else:
@@ -134,7 +134,7 @@ def play_game(player_board, computer_board):
                         print("Computer Won\n")
                         player_board.battle_board()
                         new_game()
-                    inputt = input("enter any key to continue or n to quit")
+                    inputt = input("enter any key to continue or n to quit: \n")
                     if inputt == "n":
                         new_game()
                     else:
