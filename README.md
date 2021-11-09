@@ -46,3 +46,16 @@ In battleship game user play against computer and try to beat him by destroying 
    - you cannot enter co-ordinates outside grid
    - you must enter number
    - you cannot enter the same guess twice.
+
+  <a name="technologies-used"></a>
+# 3. Technologies Used
+  [Go to the top](#table-of-contents)
+
+  ## Python
+   - Python is used to develope the game.
+
+  ## Lucid Chart
+   - Lucid Chart was used to show the workflow of the game.
+
+  ## Github
+   - Github is used to store the project.
