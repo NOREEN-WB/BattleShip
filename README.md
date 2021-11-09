@@ -85,3 +85,12 @@ In battleship game user play against computer and try to beat him by destroying 
      - set the buildpacks to Python and NodeJs
      - Link the Heroku app to the repository
      - lick on Deploy
+
+  <a name="credits"></a>
+# 7. Credits
+   [Go to the top](#table-of-contents)
+   
+   - Code Institute for the deployment terminal.
+   - Stackoverflow for the programing help.
+   - wikipedia for detail information of the game.
+
