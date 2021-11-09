@@ -59,3 +59,14 @@ In battleship game user play against computer and try to beat him by destroying 
 
   ## Github
    - Github is used to store the project.
+
+  <a name="testing"></a>
+# 4. Testing 
+
+  [Go to the top](#table-of-contents)
+
+  ## PEP8 online
+   PEP8 was used to used the code.
+   All the method to checks input validation are there and tested.
+   
+   ![pep8 online](images/pep8.PNG)
