@@ -76,3 +76,12 @@ In battleship game user play against computer and try to beat him by destroying 
   <a name="bugs"></a>
 # 5. Bugs
     There is no bug in the game.
+
+  <a name="deployment"></a>
+# 6. Deployment
+    On completion the game is pushed to github. Then Heroku is used the deploy the app.
+    - Steps for deploymnent
+     - Create a new Heroku app
+     - set the buildpacks to Python and NodeJs
+     - Link the Heroku app to the repository
+     - lick on Deploy
