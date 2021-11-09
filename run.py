@@ -18,6 +18,17 @@ class Board:
             for row in self.board:
                 print(" ".join(row))
 
+        def add_ship(self, _x, _y):
+            """
+            Adding Ship
+            """
+            if len(self.ships) >= self.num_ships:
+                print("Error: you cannot add any more ships!")
+            else:
+                self.ships.append((_x, _y))
+                if self.typee == "player":
+                    self.board[_x][_y] = "@"
+
 
 def new_game():
     """
