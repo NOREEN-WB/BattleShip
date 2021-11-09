@@ -134,7 +134,7 @@ def play_game(player_board, computer_board):
                         print("Computer Won\n")
                         player_board.battle_board()
                         new_game()
-                    inputt = input("enter any key to continue or n to quit: \n")
+                    inputt = input("enter any keyto continue or n to quit: \n")
                     if inputt == "n":
                         new_game()
                     else:
@@ -143,7 +143,6 @@ def play_game(player_board, computer_board):
                         print("computer's board: ")
                         computer_board.battle_board()
                         print("\n")
-
 
 
 def new_game():
