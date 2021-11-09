@@ -2,6 +2,17 @@
 from random import randint
 scores = {"computer": 0, "player": 0}
 
+class Board:
+    """Board Class"""
+    def __init__(self, size, player_name, typee, num_ships):
+        self.size = size
+        self.num_ships = num_ships
+        self.player_name = player_name
+        self.board = [["." for _ in range(size)] for _ in range(size)]
+        self.typee = typee
+        self.ships = []
+        self.guesses = []
+
 
 def new_game():
     """
