@@ -70,6 +70,20 @@ def populate_board(board):
             board.add_ship(_x, _y)
         board.battle_board()
 
+
+def validate_coordinates(_x, _y, board):
+    """Validating coordinates"""
+    try:
+        if _x in range(board.size) and _y in range(board.size):
+            return True
+        else:
+            raise ValueError(
+                f"Value Must be between 0 and {board.size}"
+            )
+    except ValueError as _e:
+        print(f"Invalid data: {_e}, please try again\n")
+        return False
+
 def new_game():
     """
     Initilising battleship game
