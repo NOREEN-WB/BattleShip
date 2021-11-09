@@ -47,6 +47,10 @@ In battleship game user play against computer and try to beat him by destroying 
    - you must enter number
    - you cannot enter the same guess twice.
 
+
+   ![features preview](images/battle1.PNG)
+   ![features preview](images/battle2.PNG)
+
   <a name="technologies-used"></a>
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
