@@ -33,3 +33,16 @@ In battleship game user play against computer and try to beat him by destroying 
   [Go to top](#table-of-contents)
 
   Battleship game is multiplayer game, in which user play's against computer. After the welcome secreen user is asked to enter the X, Y co-ordinates. when user enter the co-ordinates these co-ordinates are checked by the validate method. if the co-ordinates are not valid it is prompt to enter valid co-ordinates again. if the co-ordinates are valid then checks if the input co-ordinates hit any ship. if it hits a ship place * if  not the place X. if all the ships are hit. whoever hit them before wins.
+
+ <a name="features"></a>
+# 2. Features
+  [Go to the top](#table-of-contents)
+
+  - Stores individual score
+  - Ships are placed randomly
+  - The player cannot see oppnent's ships.
+  - Accepts user input
+  - validates inputs
+   - you cannot enter co-ordinates outside grid
+   - you must enter number
+   - you cannot enter the same guess twice.
