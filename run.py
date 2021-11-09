@@ -84,6 +84,65 @@ def validate_coordinates(_x, _y, board):
         print(f"Invalid data: {_e}, please try again\n")
         return False
 
+
+def play_game(player_board, computer_board):
+    """playing game"""
+    while True:
+        try:
+            _x = int(input('Enter X Coordinate: '))
+            _y = int(input('Enter Y Coordinate: '))
+        except ValueError:
+            print('Not a number')
+        else:
+            if (_x, _y) in computer_board.guesses:
+                print("You connot hit a coordinate twice")
+            else:
+                if validate_coordinates(_x, _y, computer_board):
+                    print(f"player guessed: ({_x},{_y})")
+                    player_guess = computer_board.guess(_x, _y)
+                    if player_guess == "Hit":
+                        print("player Hit a ship")
+                        scores["player"] += 1
+                    else:
+                        print("player missed this time")
+                    while True:
+                        _x = random_point(computer_board.size)
+                        _y = random_point(computer_board.size)
+                        if (_x, _y) not in player_board.guesses:
+                            if validate_coordinates(_x, _y, player_board):
+                                print(f"computer guessed: ({_x},{_y})")
+                                computer_guess = player_board.guess(_x, _y)
+                                if computer_guess == "Hit":
+                                    print("computer Hit a ship")
+                                    scores["computer"] += 1
+                                    break
+                                else:
+                                    print("computer missed this time")
+                                    break
+                    print("-" * 35)
+                    print("After this round, the scores are:")
+                    print(
+                        player_board.player_name, ": ",
+                        scores["player"], "computer: ", scores["computer"])
+                    print("-" * 35)
+                    if scores["player"] == computer_board.num_ships:
+                        print(f"{player_board.player_name} Won\n")
+                        computer_board.battle_board()
+                        new_game()
+                    if scores["computer"] == player_board.num_ships:
+                        print("Computer Won\n")
+                        player_board.battle_board()
+                        new_game()
+                    inputt = input("enter any key to continue or n to quit")
+                    if inputt == "n":
+                        new_game()
+                    else:
+                        print(f"\n{player_board.player_name}'s board: ")
+                        player_board.battle_board()
+                        print("computer's board: ")
+                        computer_board.battle_board()
+                        print("\n")
+
 def new_game():
     """
     Initilising battleship game
